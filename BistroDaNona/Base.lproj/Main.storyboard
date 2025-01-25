@@ -35,7 +35,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeImage" translatesAutoresizingMaskIntoConstraints="NO" id="rKg-EE-D9v">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeImage" translatesAutoresizingMaskIntoConstraints="NO" id="rKg-EE-D9v">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="BISTRO DA NONA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbW-9k-jJa">
@@ -62,13 +62,11 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="6" height="-1"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0hN-cC-c49">
-                                <rect key="frame" x="0.0" y="135" width="393" height="87"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="playback" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0hN-cC-c49">
+                                <rect key="frame" x="0.0" y="135" width="393" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="87" id="0uu-Hv-uOO"/>
-                                </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="exv-nu-GDK">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rxm-KE-vzH">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -87,7 +85,6 @@
                         <viewLayoutGuide key="safeArea" id="CZ4-Yy-fPK"/>
                         <constraints>
                             <constraint firstItem="lyE-5d-KXv" firstAttribute="centerY" secondItem="6oz-wy-iOE" secondAttribute="centerY" id="2al-9w-rN3"/>
-                            <constraint firstItem="0hN-cC-c49" firstAttribute="leading" secondItem="CZ4-Yy-fPK" secondAttribute="leading" id="4bC-xC-pAa"/>
                             <constraint firstItem="NbW-9k-jJa" firstAttribute="leading" secondItem="CZ4-Yy-fPK" secondAttribute="leading" constant="69" id="BUC-Zd-mzN"/>
                             <constraint firstItem="jxP-0m-xRj" firstAttribute="leading" secondItem="5ZF-7I-u2L" secondAttribute="leading" constant="7" id="E5R-jy-z1n"/>
                             <constraint firstAttribute="trailing" secondItem="jxP-0m-xRj" secondAttribute="trailing" constant="7" id="I9j-cJ-bOl"/>
@@ -97,8 +94,6 @@
                             <constraint firstItem="CZ4-Yy-fPK" firstAttribute="trailing" secondItem="NbW-9k-jJa" secondAttribute="trailing" constant="69.329999999999998" id="SLd-oZ-0iD"/>
                             <constraint firstItem="lyE-5d-KXv" firstAttribute="leading" secondItem="5ZF-7I-u2L" secondAttribute="leading" constant="3" id="U9P-Bt-1pJ"/>
                             <constraint firstItem="rKg-EE-D9v" firstAttribute="top" secondItem="5ZF-7I-u2L" secondAttribute="top" id="WAZ-er-xJu"/>
-                            <constraint firstItem="0hN-cC-c49" firstAttribute="trailing" secondItem="CZ4-Yy-fPK" secondAttribute="trailing" id="XH3-jy-cku"/>
-                            <constraint firstItem="0hN-cC-c49" firstAttribute="top" secondItem="lyE-5d-KXv" secondAttribute="bottom" constant="8" symbolic="YES" id="dch-PW-xMu"/>
                             <constraint firstItem="lyE-5d-KXv" firstAttribute="top" secondItem="NbW-9k-jJa" secondAttribute="bottom" constant="28" id="eZV-fg-Dl2"/>
                             <constraint firstItem="rKg-EE-D9v" firstAttribute="trailing" secondItem="CZ4-Yy-fPK" secondAttribute="trailing" id="f8Q-P0-3qX"/>
                             <constraint firstItem="CZ4-Yy-fPK" firstAttribute="trailing" secondItem="6oz-wy-iOE" secondAttribute="trailing" constant="18" id="gCx-KV-cw9"/>
