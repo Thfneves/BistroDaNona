@@ -11,7 +11,7 @@ class HalfPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       // HalfPageViewController.contentScrollView = CGSize(width: 100, height: 200)
         // Do any additional setup after loading the view.
     }
     
