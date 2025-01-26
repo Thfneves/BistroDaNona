@@ -9,7 +9,9 @@ import UIKit
 
 class StarterDishCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var teste: UILabel!
+    
+    @IBOutlet weak var titleStarterDish: UILabel!
+    @IBOutlet weak var pictureStarterDish: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,7 +26,8 @@ class StarterDishCollectionViewCell: UICollectionViewCell {
 
     
     func setupCell(whit item: Item){
-        teste.text = String(item.item)
+        titleStarterDish.text = item.item
+        pictureStarterDish.image = UIImage(named:item.item)
     }
     
 }
