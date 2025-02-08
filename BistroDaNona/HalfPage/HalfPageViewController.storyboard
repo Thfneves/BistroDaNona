@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Half Page View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HalfPageViewController" modalPresentationStyle="pageSheet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="HalfPageViewController" customModule="BistroDaNona" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deu Certo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQb-nx-KaE">
+                                <rect key="frame" x="164" y="405" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ux-15-9f6">
+                                <rect key="frame" x="0.0" y="138" width="393" height="714"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="49a67b7c873fd73ff56105f6567989dd" translatesAutoresizingMaskIntoConstraints="NO" id="RFR-Zx-8M1">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="714"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canape" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nm-zs-p6K">
+                                        <rect key="frame" x="8" y="35" width="377" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAy-dn-wZY">
+                                        <rect key="frame" x="26" y="75" width="336" height="178"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Canape de geleia de Damasco" translatesAutoresizingMaskIntoConstraints="NO" id="s2U-Xj-iGk">
+                                        <rect key="frame" x="42" y="335" width="309" height="219"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Serve tantas pessoas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLJ-Vo-3oz">
+                                        <rect key="frame" x="188" y="306" width="163" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price     30 reais" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnU-re-G9y">
+                                        <rect key="frame" x="202" y="571" width="149" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8y-jO-obs">
+                                        <rect key="frame" x="108" y="641" width="182" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Adcionar ao carrinho">
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleBody"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mo6-dF-o6k">
+                                        <rect key="frame" x="364" y="306" width="1" height="286"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4nm-zs-p6K" firstAttribute="leading" secondItem="2ux-15-9f6" secondAttribute="leading" constant="8" id="6Y5-B2-ccx"/>
+                                    <constraint firstItem="4nm-zs-p6K" firstAttribute="top" secondItem="2ux-15-9f6" secondAttribute="top" constant="35" id="HQx-3i-NUd"/>
+                                    <constraint firstAttribute="trailing" secondItem="4nm-zs-p6K" secondAttribute="trailing" constant="8" id="LMp-JS-gSy"/>
+                                    <constraint firstAttribute="trailing" secondItem="RFR-Zx-8M1" secondAttribute="trailing" id="OoM-Vu-UW4"/>
+                                    <constraint firstAttribute="bottom" secondItem="RFR-Zx-8M1" secondAttribute="bottom" id="Y0r-su-k90"/>
+                                    <constraint firstItem="RFR-Zx-8M1" firstAttribute="leading" secondItem="2ux-15-9f6" secondAttribute="leading" id="YtT-Fy-F8b"/>
+                                    <constraint firstItem="RFR-Zx-8M1" firstAttribute="top" secondItem="2ux-15-9f6" secondAttribute="top" id="o5E-cB-eH2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <constraints>
+                            <constraint firstItem="2ux-15-9f6" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="6b9-7G-k8S"/>
+                            <constraint firstAttribute="bottom" secondItem="2ux-15-9f6" secondAttribute="bottom" id="FbW-VZ-0q7"/>
+                            <constraint firstItem="dQb-nx-KaE" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="346" id="Hvb-l8-SVv"/>
+                            <constraint firstItem="2ux-15-9f6" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="79" id="QS1-Ym-u9Y"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dQb-nx-KaE" secondAttribute="trailing" constant="151" id="UcN-mf-U0I"/>
+                            <constraint firstItem="2ux-15-9f6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ZeR-92-Fx2"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="dQb-nx-KaE" secondAttribute="bottom" constant="392" id="iWI-5d-0hl"/>
+                            <constraint firstItem="dQb-nx-KaE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="164" id="qHn-eI-wLS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="halfPageButton" destination="Y8y-jO-obs" id="2ia-MN-adf"/>
+                        <outlet property="halfPageHowManyPeople" destination="WLJ-Vo-3oz" id="7Uk-if-vgr"/>
+                        <outlet property="halfPageImage" destination="s2U-Xj-iGk" id="riD-iW-cUg"/>
+                        <outlet property="halfPageMenuTitle" destination="4nm-zs-p6K" id="Y8k-xW-jUh"/>
+                        <outlet property="halfPagePrice" destination="rnU-re-G9y" id="wan-2V-MhG"/>
+                        <outlet property="halfPageText" destination="PAy-dn-wZY" id="Nb2-va-psb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="49a67b7c873fd73ff56105f6567989dd" width="208.66667175292969" height="313"/>
+        <image name="Canape de geleia de Damasco" width="266.66665649414062" height="178.66667175292969"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
