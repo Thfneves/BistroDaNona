@@ -16,6 +16,7 @@ class StarterDishCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
+
     }
     
     static let identifier: String = String(describing: StarterDishCollectionViewCell.self)
@@ -25,9 +26,9 @@ class StarterDishCollectionViewCell: UICollectionViewCell {
     }
 
     
-    func setupCell(whit item: Item){
-        titleStarterDish.text = item.item
-        pictureStarterDish.image = UIImage(named:item.item)
+    func setupCell(whit item: String){
+        titleStarterDish.text = item
+        pictureStarterDish.image =  UIImage(named: item)
     }
     
 }

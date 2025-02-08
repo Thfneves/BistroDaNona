@@ -20,7 +20,7 @@ class SweetFoodCollectionViewCell: UICollectionViewCell {
     }
 
     
-    func setupCell(whit item: Item){
+    func setupCell(whit item: String){
 
     }
 

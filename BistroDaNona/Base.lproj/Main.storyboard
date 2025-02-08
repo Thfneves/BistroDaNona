@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,10 +13,11 @@
         <scene sceneID="6Hj-4p-Kis">
             <objects>
                 <tabBarController id="maq-fz-XHl" customClass="TabBarController" customModule="BistroDaNona" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dYp-bY-glu">
+                    <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dYp-bY-glu">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" systemColor="systemBackgroundColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="g9M-Rl-Dym" kind="relationship" relationship="viewControllers" id="xGZ-vd-gho"/>
@@ -35,7 +37,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeImage" translatesAutoresizingMaskIntoConstraints="NO" id="rKg-EE-D9v">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="49a67b7c873fd73ff56105f6567989dd" translatesAutoresizingMaskIntoConstraints="NO" id="rKg-EE-D9v">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="BISTRO DA NONA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbW-9k-jJa">
@@ -65,8 +67,8 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="playback" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0hN-cC-c49">
                                 <rect key="frame" x="0.0" y="120" width="393" height="124"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rxm-KE-vzH">
-                                    <size key="itemSize" width="128" height="129"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="De1-P6-P71">
+                                    <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -223,7 +225,8 @@
                             <constraint firstItem="1fZ-iy-aV3" firstAttribute="top" secondItem="D1v-PF-KnT" secondAttribute="bottom" constant="3" id="yXz-Eg-XZx"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="viR-y8-V6o">
+                    <tabBarItem key="tabBarItem" title="Home" id="viR-y8-V6o">
+                        <imageReference key="image" image="house" catalog="system" renderingMode="template"/>
                         <color key="badgeColor" systemColor="labelColor"/>
                     </tabBarItem>
                     <connections>
@@ -245,8 +248,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeImage" translatesAutoresizingMaskIntoConstraints="NO" id="d1G-Ng-qNt">
-                                <rect key="frame" x="-207" y="0.0" width="600" height="852"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="49a67b7c873fd73ff56105f6567989dd" translatesAutoresizingMaskIntoConstraints="NO" id="d1G-Ng-qNt">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bO-Wb-SiW">
                                 <rect key="frame" x="7" y="758" width="379" height="1"/>
@@ -262,8 +265,12 @@
                             <constraint firstAttribute="trailing" secondItem="9bO-Wb-SiW" secondAttribute="trailing" constant="7" id="18j-Yh-Mkn"/>
                             <constraint firstAttribute="trailing" secondItem="d1G-Ng-qNt" secondAttribute="trailing" id="7Xy-Mj-f7L"/>
                             <constraint firstAttribute="bottom" secondItem="d1G-Ng-qNt" secondAttribute="bottom" id="DBS-8r-nva"/>
+                            <constraint firstItem="d1G-Ng-qNt" firstAttribute="leading" secondItem="twL-t8-GQh" secondAttribute="leading" id="KmU-LC-JsU"/>
                             <constraint firstItem="twL-t8-GQh" firstAttribute="bottom" secondItem="9bO-Wb-SiW" secondAttribute="bottom" constant="10" id="RfN-1K-l8O"/>
+                            <constraint firstItem="d1G-Ng-qNt" firstAttribute="trailing" secondItem="twL-t8-GQh" secondAttribute="trailing" id="ebO-Un-ffy"/>
+                            <constraint firstAttribute="bottom" secondItem="d1G-Ng-qNt" secondAttribute="bottom" id="irj-gM-q3O"/>
                             <constraint firstItem="9bO-Wb-SiW" firstAttribute="leading" secondItem="QIA-xV-nVV" secondAttribute="leading" constant="7" id="jQZ-Nd-ffV"/>
+                            <constraint firstItem="d1G-Ng-qNt" firstAttribute="top" secondItem="QIA-xV-nVV" secondAttribute="top" id="tL0-fl-3Ql"/>
                             <constraint firstItem="d1G-Ng-qNt" firstAttribute="top" secondItem="QIA-xV-nVV" secondAttribute="top" id="u9E-T9-ve2"/>
                         </constraints>
                     </view>
@@ -271,7 +278,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aV9-Sm-Mbs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3121" y="422"/>
+            <point key="canvasLocation" x="-3121.3740458015268" y="421.83098591549299"/>
         </scene>
         <!--Person-->
         <scene sceneID="qro-Ue-pl9">
@@ -281,7 +288,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HomeImage" translatesAutoresizingMaskIntoConstraints="NO" id="1Os-6R-i8H">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="49a67b7c873fd73ff56105f6567989dd" translatesAutoresizingMaskIntoConstraints="NO" id="1Os-6R-i8H">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -309,7 +316,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="HomeImage" width="600" height="600"/>
+        <image name="49a67b7c873fd73ff56105f6567989dd" width="208.66667175292969" height="313"/>
         <image name="cart" catalog="system" width="128" height="102"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="person" catalog="system" width="128" height="121"/>
