@@ -7,6 +7,9 @@
 
 import UIKit
 
+
+
+
 class HalfPageViewController: UIViewController {
 
     @IBOutlet weak var halfPageMenuTitle: UILabel!
@@ -16,23 +19,30 @@ class HalfPageViewController: UIViewController {
     @IBOutlet weak var halfPagePrice: UILabel!
     @IBOutlet weak var halfPageButton: UIButton!
     
+    
+    var selectedItem: String?
+    
+    
+    override func viewDidDisappear(_ animated: Bool) {
+       super.viewDidDisappear(animated)
+   
+   }
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-       // HalfPageViewController.contentScrollView = CGSize(width: 100, height: 200)
-        // Do any additional setup after loading the view.
+        
+      
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+  
+    func setUpView(selectItem: String) {
+        if let selectItem = selectedItem {
+            print("essa foi a interacao do usuario \(selectItem)")
+        }
+    }
+
     
     
     
