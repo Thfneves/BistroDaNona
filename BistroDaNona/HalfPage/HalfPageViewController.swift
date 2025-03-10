@@ -12,6 +12,9 @@ import UIKit
 
 class HalfPageViewController: UIViewController {
 
+    
+    
+    
     @IBOutlet weak var halfPageMenuTitle: UILabel!
     @IBOutlet weak var halfPageText: UITextView!
     @IBOutlet weak var halfPageHowManyPeople: UILabel!
@@ -20,28 +23,35 @@ class HalfPageViewController: UIViewController {
     @IBOutlet weak var halfPageButton: UIButton!
     
     
+    
+    func receiveData(selectedItem: String?, indexSelected: Int?, arraySelected: [Dish]) {
+        self.selectedItem = selectedItem
+        self.indexSelected = indexSelected
+        self.receivedArray = arraySelected
+    }
+   
+    var indexSelected: Int?
     var selectedItem: String?
-    
-    
+    var receivedArray: [Dish] = []
+   
     override func viewDidDisappear(_ animated: Bool) {
        super.viewDidDisappear(animated)
    
    }
+    var countReceive = receiveData.self
     
-
+    func atritubedHalf(receivedArray: [Dish], indexSelected: Int, selectedItem: String) {
+        
+        
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-      
+        halfPageMenuTitle.text = receivedArray[indexSelected!].plateName
     }
 
-  
-    func setUpView(selectItem: String) {
-        if let selectItem = selectedItem {
-            print("essa foi a interacao do usuario \(selectItem)")
-        }
-    }
+    
 
     
     

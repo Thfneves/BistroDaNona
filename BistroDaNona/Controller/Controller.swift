@@ -5,7 +5,12 @@
 //  Created by Thiago Neves on 08/02/25.
 //
 
-
+protocol Dish {
+    var plateName: String { get }
+        var description: String { get }
+        var price: Double { get }
+        var forManyPeople: Int { get }
+}
 
 struct Menu {
     var starterDish : [StarterDish]
@@ -14,7 +19,7 @@ struct Menu {
     var drinks : [Drinks]
     
 }
-struct StarterDish{                         //      Testanto usabilidade sem uma struct de array, porque quando acessamos o array pela struct menu, ja pegamos todos os dados dentro da struct em                                                   questao. logo e redundante utilizar outra struct
+struct StarterDish: Dish {                        
     let plateName : String
     let description : String
     var price : Double
@@ -22,7 +27,7 @@ struct StarterDish{                         //      Testanto usabilidade sem uma
     var imagesStarterDish : String
 }
 
-struct MainCourse {
+struct MainCourse: Dish  {
     let plateName : String
     let description : String
     var price : Double
@@ -30,14 +35,14 @@ struct MainCourse {
 //    var imagesMainCourse : [String]
 }
 
-struct SweetFood {
+struct SweetFood: Dish  {
     let plateName : String
     let description : String
     var price : Double
     var forManyPeople : Int
 //    var imagesSweetFood : [String]
 }
-struct Drinks {
+struct Drinks: Dish  {
     let plateName : String
     let description : String
     var price : Double
