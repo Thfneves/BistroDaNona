@@ -7,13 +7,7 @@
 
 import UIKit
 
-
-
-
 class HalfPageViewController: UIViewController {
-
-    
-    
     
     @IBOutlet weak var halfPageMenuTitle: UILabel!
     @IBOutlet weak var halfPageText: UITextView!
@@ -22,11 +16,8 @@ class HalfPageViewController: UIViewController {
     @IBOutlet weak var halfPagePrice: UILabel!
     @IBOutlet weak var halfPageButton: UIButton!
     
-    
-    
-    func receiveData(selectedItem: String?, indexSelected: Int?, arraySelected: [Dish]) {
+    func receiveData(selectedItem: String?, arraySelected: [Dish]) {
         self.selectedItem = selectedItem
-        self.indexSelected = indexSelected
         self.receivedArray = arraySelected
     }
    
@@ -38,9 +29,21 @@ class HalfPageViewController: UIViewController {
        super.viewDidDisappear(animated)
    
    }
-    var countReceive = receiveData.self
     
-    func atritubedHalf(receivedArray: [Dish], indexSelected: Int, selectedItem: String) {
+    func atritubedHalf(receivedArray: [Dish], selectedItem: String) {
+        
+        for Dish in receivedArray {
+            
+            if Dish.plateName == selectedItem{
+                halfPageMenuTitle.text = Dish.plateName
+                halfPageText.text = Dish.description
+                halfPageHowManyPeople.text = "Serve até \(String(Dish.forManyPeople)) pessoas"
+                halfPageImage.image = UIImage(named: Dish.plateName)
+                halfPagePrice.text = "R$ \(Dish.price)"
+                
+            }
+         
+        }
         
         
     }
@@ -48,13 +51,8 @@ class HalfPageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        halfPageMenuTitle.text = receivedArray[indexSelected!].plateName
+        atritubedHalf(receivedArray: receivedArray, selectedItem: selectedItem!)
     }
 
-    
-
-    
-    
-    
 
 }

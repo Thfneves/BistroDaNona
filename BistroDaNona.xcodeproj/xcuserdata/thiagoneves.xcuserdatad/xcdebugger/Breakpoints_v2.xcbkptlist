@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "A1592C06-1884-45CA-BA38-76A5364E1022"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BistroDaNona/Home/Cell/StarterDishCollectionViewCell.swift"
@@ -46,42 +46,10 @@
             filePath = "BistroDaNona/HalfPage/HalfPageViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "HalfPageViewController"
             landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "57741462-B5E2-4F49-8DCF-3B165149E37E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BistroDaNona/HalfPage/HalfPageViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "HalfPageViewController"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "27811E06-4ADF-45CF-87EA-C89E6842D69D"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BistroDaNona/Pages/Home/HomeScreenViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
-            landmarkName = "collectionView(_:didSelectItemAt:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -94,8 +62,8 @@
             filePath = "BistroDaNona/HalfPage/HalfPageViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "HalfPageViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -104,7 +72,39 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "00FAD6B2-46CE-4EB7-84ED-19AF279A459E"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BistroDaNona/HalfPage/HalfPageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "HalfPageViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "37F9AD96-A8E4-464A-8B99-2833A2712E11"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BistroDaNona/HalfPage/HalfPageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "HalfPageViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C42F0376-8AF4-4591-9CBB-59F53B06186C"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BistroDaNona/HalfPage/HalfPageViewController.swift"
@@ -112,210 +112,56 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
             endingLineNumber = "33"
-            landmarkName = "HalfPageViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "00FAD6B2-46CE-4EB7-84ED-19AF279A459E - d41d4ed8bc0004a5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BistroDaNona.HalfPageViewController.indexSelected.getter : Swift.Optional&lt;Swift.Int&gt;"
-                  moduleName = "BistroDaNona.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thiagoneves/Desktop/Programacao/MinhaAutoria/BistroDaNonaNew/BistroDaNona/BistroDaNona/HalfPage/HalfPageViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0">
-               </Location>
-               <Location
-                  uuid = "00FAD6B2-46CE-4EB7-84ED-19AF279A459E - a0821320038294cd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BistroDaNona.HalfPageViewController.indexSelected.setter : Swift.Optional&lt;Swift.Int&gt;"
-                  moduleName = "BistroDaNona.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thiagoneves/Desktop/Programacao/MinhaAutoria/BistroDaNonaNew/BistroDaNona/BistroDaNona/HalfPage/HalfPageViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28">
-               </Location>
-               <Location
-                  uuid = "00FAD6B2-46CE-4EB7-84ED-19AF279A459E - a8b7272e5a5d4bfc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BistroDaNona.HalfPageViewController.indexSelected.modify : Swift.Optional&lt;Swift.Int&gt;"
-                  moduleName = "BistroDaNona.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thiagoneves/Desktop/Programacao/MinhaAutoria/BistroDaNonaNew/BistroDaNona/BistroDaNona/HalfPage/HalfPageViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28">
-               </Location>
-               <Location
-                  uuid = "00FAD6B2-46CE-4EB7-84ED-19AF279A459E - fe1f0b3a1f47771c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BistroDaNona.HalfPageViewController.indexSelected.modify : Swift.Optional&lt;Swift.Int&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "BistroDaNona.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///%3Ccompiler-generated%3E"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0">
-               </Location>
-               <Location
-                  uuid = "00FAD6B2-46CE-4EB7-84ED-19AF279A459E - 9bf1de7ce7172f80"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BistroDaNona.HalfPageViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; BistroDaNona.HalfPageViewController"
-                  moduleName = "BistroDaNona.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thiagoneves/Desktop/Programacao/MinhaAutoria/BistroDaNonaNew/BistroDaNona/BistroDaNona/HalfPage/HalfPageViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28">
-               </Location>
-               <Location
-                  uuid = "00FAD6B2-46CE-4EB7-84ED-19AF279A459E - 45e2734a51ff6f75"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BistroDaNona.HalfPageViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;BistroDaNona.HalfPageViewController&gt;"
-                  moduleName = "BistroDaNona.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thiagoneves/Desktop/Programacao/MinhaAutoria/BistroDaNonaNew/BistroDaNona/BistroDaNona/HalfPage/HalfPageViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28">
-               </Location>
-            </Locations>
+            landmarkName = "atritubedHalf(receivedArray:selectedItem:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E551BB3B-9308-4E91-935A-106DEB4A1EF6"
+            uuid = "780D044C-2645-4022-97AF-0C569FE571E4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BistroDaNona/HalfPage/HalfPageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "455FAEB8-0968-478C-B8C5-2786F9880565"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BistroDaNona/HalfPage/HalfPageViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "HalfPageViewController"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "E551BB3B-9308-4E91-935A-106DEB4A1EF6 - 232cc12e39a02ec1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "implicit closure #2 (Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.Int&gt;, Swift.Array&lt;BistroDaNona.Dish&gt;) -&gt; () in implicit closure #1 (BistroDaNona.HalfPageViewController) -&gt; (Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.Int&gt;, Swift.Array&lt;BistroDaNona.Dish&gt;) -&gt; () in variable initialization expression of BistroDaNona.HalfPageViewController.countReceive : (BistroDaNona.HalfPageViewController) -&gt; (Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.Int&gt;, Swift.Array&lt;BistroDaNona.Dish&gt;) -&gt; ()"
-                  moduleName = "BistroDaNona.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thiagoneves/Desktop/Programacao/MinhaAutoria/BistroDaNonaNew/BistroDaNona/BistroDaNona/HalfPage/HalfPageViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43">
-               </Location>
-               <Location
-                  uuid = "E551BB3B-9308-4E91-935A-106DEB4A1EF6 - ac477ae08e608f0d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BistroDaNona.HalfPageViewController.countReceive.getter : (BistroDaNona.HalfPageViewController) -&gt; (Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.Int&gt;, Swift.Array&lt;BistroDaNona.Dish&gt;) -&gt; ()"
-                  moduleName = "BistroDaNona.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thiagoneves/Desktop/Programacao/MinhaAutoria/BistroDaNonaNew/BistroDaNona/BistroDaNona/HalfPage/HalfPageViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0">
-               </Location>
-               <Location
-                  uuid = "E551BB3B-9308-4E91-935A-106DEB4A1EF6 - ac477ae08e60957a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BistroDaNona.HalfPageViewController.countReceive.setter : (BistroDaNona.HalfPageViewController) -&gt; (Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.Int&gt;, Swift.Array&lt;BistroDaNona.Dish&gt;) -&gt; ()"
-                  moduleName = "BistroDaNona.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thiagoneves/Desktop/Programacao/MinhaAutoria/BistroDaNonaNew/BistroDaNona/BistroDaNona/HalfPage/HalfPageViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43">
-               </Location>
-               <Location
-                  uuid = "E551BB3B-9308-4E91-935A-106DEB4A1EF6 - ac477ae08e60957a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BistroDaNona.HalfPageViewController.countReceive.modify : (BistroDaNona.HalfPageViewController) -&gt; (Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.Int&gt;, Swift.Array&lt;BistroDaNona.Dish&gt;) -&gt; ()"
-                  moduleName = "BistroDaNona.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thiagoneves/Desktop/Programacao/MinhaAutoria/BistroDaNonaNew/BistroDaNona/BistroDaNona/HalfPage/HalfPageViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43">
-               </Location>
-               <Location
-                  uuid = "E551BB3B-9308-4E91-935A-106DEB4A1EF6 - c6a95c0ff08d430e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BistroDaNona.HalfPageViewController.countReceive.modify : (BistroDaNona.HalfPageViewController) -&gt; (Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.Int&gt;, Swift.Array&lt;BistroDaNona.Dish&gt;) -&gt; () with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "BistroDaNona.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///%3Ccompiler-generated%3E"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0">
-               </Location>
-               <Location
-                  uuid = "E551BB3B-9308-4E91-935A-106DEB4A1EF6 - 9bf1de7ce7172993"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BistroDaNona.HalfPageViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; BistroDaNona.HalfPageViewController"
-                  moduleName = "BistroDaNona.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thiagoneves/Desktop/Programacao/MinhaAutoria/BistroDaNonaNew/BistroDaNona/BistroDaNona/HalfPage/HalfPageViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43">
-               </Location>
-               <Location
-                  uuid = "E551BB3B-9308-4E91-935A-106DEB4A1EF6 - 45e2734a51ff6966"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BistroDaNona.HalfPageViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;BistroDaNona.HalfPageViewController&gt;"
-                  moduleName = "BistroDaNona.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thiagoneves/Desktop/Programacao/MinhaAutoria/BistroDaNonaNew/BistroDaNona/BistroDaNona/HalfPage/HalfPageViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "361B23D0-5B6D-4059-AFA6-64F63A56C82C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BistroDaNona/HalfPage/HalfPageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "atritubedHalf(receivedArray:selectedItem:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
