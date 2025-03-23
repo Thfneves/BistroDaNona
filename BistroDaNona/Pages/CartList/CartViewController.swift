@@ -9,38 +9,66 @@ import UIKit
 
 class CartViewController: UIViewController {
 
-    @IBOutlet weak var carTableView: UITableView!
-    
+    @IBOutlet weak var carListTableView: UITableView!
+    @IBOutlet weak var totalCart: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         cartTableView()
         
+        
+    }
+   
+    var items: [Dish] {
+        return CartManager.shared.items
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        carTableView.reloadData()
+        carListTableView.reloadData()
+        totalCart.text = String(calculaTotal())
     }
     
-    
-    func cartTableView(){
-        carTableView.delegate = self
-        carTableView.dataSource = self
-        carTableView.register(CartTableView.nib(), forCellReuseIdentifier: CartTableView.identifier)
-        carTableView.reloadData()
-    }
-    
-    
-    var items: [Dish] {
-        return CartManager.shared.items
+    func receiveData(arraySelected: [Dish]) {
+        self.receivedArray = arraySelected
     }
 
+    override func viewDidDisappear(_ animated: Bool) {
+       super.viewDidDisappear(animated)
+     
+   }
+    
+    var receivedArray: [Dish] = []
+        
+    
+    func cartTableView(){
+        carListTableView.delegate = self
+        carListTableView.dataSource = self
+        carListTableView.register(CartTableView.nib(), forCellReuseIdentifier: CartTableView.identifier)
+        carListTableView.reloadData()
+    }
+    
+    
+    func calculaTotal() -> Double{
+       
+            var soma = 00.00
+            
+        for dish in items {
+                soma += dish.price
+                print(soma)
+                print(dish.price)
+            }
+            return soma
+        }
+        
+
+    
 }
 
 extension CartViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("Itens no array: \(items.count)")
+
         return items.count
     }
     

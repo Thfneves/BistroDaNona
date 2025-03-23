@@ -5,6 +5,14 @@
 //  Created by Thiago Neves on 08/02/25.
 //
 
+class  CartManager {
+        static var shared = CartManager()
+        
+    var items: [Dish] = []
+        
+    }
+
+
 protocol Dish {
     var plateName: String { get }
         var description: String { get }
@@ -12,13 +20,6 @@ protocol Dish {
         var forManyPeople: Int { get }
 }
 
-struct Menu {
-    var starterDish : [StarterDish]
-    var mainCourse : [MainCourse]
-    var sweetFood : [SweetFood]
-    var drinks : [Drinks]
-    
-}
 struct StarterDish: Dish {                        
     let plateName : String
     let description : String
