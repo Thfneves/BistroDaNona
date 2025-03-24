@@ -7,10 +7,11 @@
 
 import UIKit
 
-class CartViewController: UIViewController {
+class CartViewController: UIViewController, CartTableView.CartCellDelegate {
 
     @IBOutlet weak var carListTableView: UITableView!
     @IBOutlet weak var totalCart: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -60,8 +61,6 @@ class CartViewController: UIViewController {
             }
             return soma
         }
-        
-
     
 }
 
@@ -74,21 +73,24 @@ extension CartViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CartTableView.identifier, for: indexPath) as? CartTableView else {
-            return UITableViewCell()
-            
-        }
-        let item = items[indexPath.row]
-        cell.configure(with: item)
-        return cell
+                  return UITableViewCell()
+              }
+
+              let item = items[indexPath.row]
+              cell.configure(with: item)
+              cell.delegate = self  // 🔥 Agora a célula sabe quem é a ViewController!
+
+              return cell
+          }
+
+          func didTapRemoveButton(cell: CartTableView) {
+              if let indexPath = carListTableView.indexPath(for: cell) {
+                  CartManager.shared.items.remove(at: indexPath.row) // Remove do array global
+                  carListTableView.deleteRows(at: [indexPath], with: .automatic) // Remove da UI
+                  totalCart.text = String(calculaTotal()) // Atualiza o total do carrinho
+              }
+          }
+      }
         
-        }
-        
-        func tableView(_ tableView: UITableView, numberOfItemsInSection section: Int) -> Int {
-            return 1
-        }
-        
-        
-        
-        
-    
-}
+
+

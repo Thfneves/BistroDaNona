@@ -266,7 +266,7 @@
                                 <size key="shadowOffset" width="6" height="-1"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CartViewController" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="uBO-eu-pLT">
-                                <rect key="frame" x="7" y="114" width="379" height="465"/>
+                                <rect key="frame" x="2" y="114" width="389" height="465"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQB-co-Azu">
@@ -298,11 +298,11 @@
                             <constraint firstItem="9bO-Wb-SiW" firstAttribute="top" secondItem="uBO-eu-pLT" secondAttribute="bottom" constant="179" id="5mc-KO-TOF"/>
                             <constraint firstAttribute="trailing" secondItem="d1G-Ng-qNt" secondAttribute="trailing" id="7Xy-Mj-f7L"/>
                             <constraint firstItem="9bO-Wb-SiW" firstAttribute="top" secondItem="yQ9-Hm-Ti3" secondAttribute="bottom" constant="149" id="7eh-lc-80p"/>
-                            <constraint firstItem="twL-t8-GQh" firstAttribute="trailing" secondItem="uBO-eu-pLT" secondAttribute="trailing" constant="7" id="7yT-56-QKA"/>
+                            <constraint firstItem="twL-t8-GQh" firstAttribute="trailing" secondItem="uBO-eu-pLT" secondAttribute="trailing" constant="2" id="7yT-56-QKA"/>
                             <constraint firstItem="HsB-G3-7RO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yQ9-Hm-Ti3" secondAttribute="trailing" constant="8" symbolic="YES" id="9kb-Wm-4td"/>
                             <constraint firstAttribute="bottom" secondItem="d1G-Ng-qNt" secondAttribute="bottom" id="DBS-8r-nva"/>
                             <constraint firstItem="eFi-ff-G4O" firstAttribute="leading" secondItem="twL-t8-GQh" secondAttribute="leading" constant="141" id="Fti-2Q-UY3"/>
-                            <constraint firstItem="uBO-eu-pLT" firstAttribute="leading" secondItem="twL-t8-GQh" secondAttribute="leading" constant="7" id="GQp-rk-u8J"/>
+                            <constraint firstItem="uBO-eu-pLT" firstAttribute="leading" secondItem="twL-t8-GQh" secondAttribute="leading" constant="2" id="GQp-rk-u8J"/>
                             <constraint firstItem="d1G-Ng-qNt" firstAttribute="leading" secondItem="twL-t8-GQh" secondAttribute="leading" id="KmU-LC-JsU"/>
                             <constraint firstItem="9bO-Wb-SiW" firstAttribute="top" secondItem="aQB-co-Azu" secondAttribute="bottom" constant="32.666666666666629" id="O8J-dx-t7c"/>
                             <constraint firstItem="eFi-ff-G4O" firstAttribute="top" secondItem="twL-t8-GQh" secondAttribute="top" constant="5" id="PoB-hV-OWw"/>

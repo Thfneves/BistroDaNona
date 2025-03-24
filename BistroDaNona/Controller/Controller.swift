@@ -12,7 +12,6 @@ class  CartManager {
         
     }
 
-
 protocol Dish {
     var plateName: String { get }
         var description: String { get }

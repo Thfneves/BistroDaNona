@@ -11,7 +11,6 @@ class CartTableView: UITableViewCell {
     
     
     @IBOutlet weak var cartName: UILabel!
-    
     @IBOutlet weak var howManyCartName: UILabel!
     @IBOutlet weak var priceCartName: UILabel!
     
@@ -23,11 +22,17 @@ class CartTableView: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-      
         
     }
-
+    protocol CartCellDelegate: AnyObject {
+        func didTapRemoveButton(cell: CartTableView)
+    }
+    weak var delegate: CartCellDelegate?
+    
+    @IBAction func RemoveCell(_ sender: UIButton) {
+        delegate?.didTapRemoveButton(cell: self)
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
@@ -35,11 +40,12 @@ class CartTableView: UITableViewCell {
     }
     
     func configure(with dish: Dish) {
+        let priceDecimal = Decimal(dish.price)
+        
         cartName.text = dish.plateName
         howManyCartName.text = "1"
-        priceCartName.text = String(format: "%.2f", dish.price)
+        priceCartName.text = String(format: "%.2f", NSDecimalNumber(decimal: priceDecimal).doubleValue)
         
-
     }
     
     
