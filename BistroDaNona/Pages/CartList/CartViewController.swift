@@ -17,9 +17,12 @@ class CartViewController: UIViewController, CartTableView.CartCellDelegate {
         
         cartTableView()
         
-        
     }
    
+    @IBAction func nextBuy(_ sender: UIButton) {
+        
+        
+    }
     var items: [Dish] {
         return CartManager.shared.items
     }
