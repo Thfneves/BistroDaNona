@@ -11,7 +11,15 @@ class  CartManager {
     var items: [Dish] = []
         
     }
-
+struct Person {
+    
+    var name: String
+    var email: String
+    var phone: Int
+    var adress: Int
+    
+    
+}
 protocol Dish {
     var plateName: String { get }
         var description: String { get }

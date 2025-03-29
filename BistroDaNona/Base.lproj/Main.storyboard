@@ -380,7 +380,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Endereco" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="8VJ-tB-efa">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cep" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="8VJ-tB-efa">
                                                 <rect key="frame" x="0.0" y="195" width="302" height="34"/>
                                                 <color key="tintColor" red="0.0078431377190000002" green="0.0039215688589999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -399,12 +399,6 @@
                                             <constraint firstItem="pT8-NT-fbV" firstAttribute="leading" secondItem="83m-Z0-l5l" secondAttribute="leading" id="rjz-Re-CKq"/>
                                         </constraints>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quer alterar alguma informacao? Clique aqui!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJT-Nv-Rn7">
-                                        <rect key="frame" x="15" y="468.66666666666663" width="323" height="38.333333333333314"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cyh-FZ-jBJ">
                                         <rect key="frame" x="25" y="21" width="302" height="107"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.18362032312925169" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -414,7 +408,7 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGi-e2-S6w">
-                                        <rect key="frame" x="127" y="404" width="99" height="34.333333333333314"/>
+                                        <rect key="frame" x="125" y="404" width="102" height="34.333333333333314"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Cadastrar">
@@ -430,20 +424,17 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0078431377190000002" green="0.0078431377190000002" blue="0.0" alpha="0.63302508503401356" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IGi-e2-S6w" secondAttribute="trailing" symbolic="YES" id="4VE-FW-hqd"/>
-                                    <constraint firstItem="ZJT-Nv-Rn7" firstAttribute="leading" secondItem="yb8-pE-cYH" secondAttribute="leading" constant="15" id="A8k-NB-EYM"/>
+                                    <constraint firstItem="83m-Z0-l5l" firstAttribute="centerX" secondItem="IGi-e2-S6w" secondAttribute="centerX" id="4QC-Da-DZK"/>
                                     <constraint firstItem="cyh-FZ-jBJ" firstAttribute="centerX" secondItem="83m-Z0-l5l" secondAttribute="centerX" id="EcG-Py-t40"/>
                                     <constraint firstItem="cyh-FZ-jBJ" firstAttribute="leading" secondItem="yb8-pE-cYH" secondAttribute="leading" constant="25" id="OUQ-VD-gQl"/>
                                     <constraint firstAttribute="trailing" secondItem="cyh-FZ-jBJ" secondAttribute="trailing" constant="26" id="QKM-t2-18A"/>
-                                    <constraint firstItem="ZJT-Nv-Rn7" firstAttribute="top" secondItem="IGi-e2-S6w" secondAttribute="bottom" constant="30.333333333333314" id="RUH-pL-1wt"/>
-                                    <constraint firstItem="IGi-e2-S6w" firstAttribute="leading" secondItem="yb8-pE-cYH" secondAttribute="leading" constant="127" id="UVJ-MC-nx4"/>
                                     <constraint firstItem="cyh-FZ-jBJ" firstAttribute="top" secondItem="yb8-pE-cYH" secondAttribute="top" constant="21" id="XL4-Oh-WSi"/>
                                     <constraint firstItem="83m-Z0-l5l" firstAttribute="top" secondItem="cyh-FZ-jBJ" secondAttribute="bottom" constant="22" id="bwh-Kc-QJW"/>
                                     <constraint firstAttribute="trailing" secondItem="83m-Z0-l5l" secondAttribute="trailing" constant="26" id="ibl-zP-UJK"/>
+                                    <constraint firstAttribute="bottom" secondItem="IGi-e2-S6w" secondAttribute="bottom" constant="80.666666666666686" id="jbS-hs-daf"/>
                                     <constraint firstItem="83m-Z0-l5l" firstAttribute="leading" secondItem="yb8-pE-cYH" secondAttribute="leading" constant="25" id="jew-1x-GNF"/>
                                     <constraint firstItem="IGi-e2-S6w" firstAttribute="top" secondItem="83m-Z0-l5l" secondAttribute="bottom" constant="25" id="nAq-ZQ-gk1"/>
-                                    <constraint firstAttribute="trailing" secondItem="ZJT-Nv-Rn7" secondAttribute="trailing" constant="15" id="rQ6-rk-noG"/>
-                                    <constraint firstAttribute="bottom" secondItem="ZJT-Nv-Rn7" secondAttribute="bottom" constant="12" id="xac-Bw-byI"/>
+                                    <constraint firstItem="IGi-e2-S6w" firstAttribute="leading" secondItem="yb8-pE-cYH" secondAttribute="leading" constant="125" id="vlQ-8I-Dcr"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bistro da Nona" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8M-Cj-rHL">
@@ -477,11 +468,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Person" image="person" catalog="system" id="LCz-4b-kFZ"/>
                     <connections>
-                        <outlet property="address" destination="8VJ-tB-efa" id="n2t-k3-mek"/>
-                        <outlet property="changeEditUser" destination="ZJT-Nv-Rn7" id="AwW-8F-pTx"/>
-                        <outlet property="emailTextField" destination="MqR-Ea-V14" id="2ng-Kt-p5W"/>
-                        <outlet property="name" destination="UwU-OL-1Tf" id="pve-bM-iug"/>
-                        <outlet property="phoneNumber" destination="pT8-NT-fbV" id="lqN-ac-PYE"/>
+                        <outlet property="addressTextField" destination="8VJ-tB-efa" id="aQN-Yz-4gu"/>
+                        <outlet property="emailTextField" destination="MqR-Ea-V14" id="Pqr-yg-PyM"/>
+                        <outlet property="nameTextField" destination="UwU-OL-1Tf" id="AmI-15-PCu"/>
+                        <outlet property="phoneNumberTextField" destination="pT8-NT-fbV" id="hWd-9Q-lMg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yue-k1-uQE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
