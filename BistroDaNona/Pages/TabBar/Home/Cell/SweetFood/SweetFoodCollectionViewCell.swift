@@ -9,6 +9,8 @@ import UIKit
 
 class SweetFoodCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var sweetLabel: UILabel!
+    @IBOutlet weak var sweetImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -21,7 +21,14 @@ class CartViewController: UIViewController, CartTableView.CartCellDelegate {
    
     @IBAction func nextBuy(_ sender: UIButton) {
         
-        
+        if let vc = UIStoryboard(name: "PaymentViewController", bundle: nil).instantiateViewController(withIdentifier: "PaymentViewController") as? PaymentViewController {
+            
+            if let presentationController = vc.presentationController as? UISheetPresentationController {
+                presentationController.detents = [.large()]
+            }
+            self.present(vc, animated: true)
+            
+        }
     }
     var items: [Dish] {
         return CartManager.shared.items
@@ -81,16 +88,16 @@ extension CartViewController: UITableViewDelegate, UITableViewDataSource{
 
               let item = items[indexPath.row]
               cell.configure(with: item)
-              cell.delegate = self  // 🔥 Agora a célula sabe quem é a ViewController!
+              cell.delegate = self
 
               return cell
           }
 
           func didTapRemoveButton(cell: CartTableView) {
               if let indexPath = carListTableView.indexPath(for: cell) {
-                  CartManager.shared.items.remove(at: indexPath.row) // Remove do array global
-                  carListTableView.deleteRows(at: [indexPath], with: .automatic) // Remove da UI
-                  totalCart.text = String(calculaTotal()) // Atualiza o total do carrinho
+                  CartManager.shared.items.remove(at: indexPath.row)
+                  carListTableView.deleteRows(at: [indexPath], with: .automatic)
+                  totalCart.text = String(calculaTotal())
               }
           }
       }

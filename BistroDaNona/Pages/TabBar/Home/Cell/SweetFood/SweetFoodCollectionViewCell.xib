@@ -17,25 +17,34 @@
                 <rect key="frame" x="0.0" y="0.0" width="250" height="120"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doces" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kz0-cZ-7Gy">
-                        <rect key="frame" x="101" y="54" width="49" height="13"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fsq-89-8O2">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="100"/>
+                    </imageView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" systemColor="systemOrangeColor"/>
             <constraints>
-                <constraint firstItem="kz0-cZ-7Gy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="101" id="7Di-Ib-Lrl"/>
-                <constraint firstItem="kz0-cZ-7Gy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="54" id="7TG-wF-Unp"/>
-                <constraint firstAttribute="trailing" secondItem="kz0-cZ-7Gy" secondAttribute="trailing" constant="100" id="Fom-hk-pod"/>
-                <constraint firstAttribute="bottom" secondItem="kz0-cZ-7Gy" secondAttribute="bottom" constant="53" id="WP1-ms-c10"/>
+                <constraint firstItem="fsq-89-8O2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="C0D-ax-oJB"/>
+                <constraint firstItem="fsq-89-8O2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="X1l-Xg-wWU"/>
+                <constraint firstAttribute="bottom" secondItem="fsq-89-8O2" secondAttribute="bottom" id="tC3-AG-iDD"/>
+                <constraint firstAttribute="trailing" secondItem="fsq-89-8O2" secondAttribute="trailing" id="zRn-hd-Nk1"/>
             </constraints>
             <size key="customSize" width="382" height="231"/>
-            <point key="canvasLocation" x="392.36641221374043" y="84.154929577464799"/>
+            <connections>
+                <outlet property="sweetImage" destination="fsq-89-8O2" id="Eyt-7W-fyo"/>
+                <outlet property="sweetLabel" destination="qgK-dy-Jsd" id="7tV-Jt-vLu"/>
+            </connections>
+            <point key="canvasLocation" x="392.36641221374043" y="83.098591549295776"/>
         </collectionViewCell>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qgK-dy-Jsd">
+            <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="247" y="26"/>
+        </label>
     </objects>
     <resources>
         <systemColor name="systemOrangeColor">

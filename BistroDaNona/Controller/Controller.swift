@@ -25,6 +25,7 @@ protocol Dish {
         var description: String { get }
         var price: Double { get }
         var forManyPeople: Int { get }
+   //     var imagesDrinks: [String]
 }
 
 struct StarterDish: Dish {                        
@@ -40,7 +41,7 @@ struct MainCourse: Dish  {
     let description : String
     var price : Double
     var forManyPeople : Int
-//    var imagesMainCourse : [String]
+   var imagesMainCourse : String
 }
 
 struct SweetFood: Dish  {
@@ -48,13 +49,13 @@ struct SweetFood: Dish  {
     let description : String
     var price : Double
     var forManyPeople : Int
-//    var imagesSweetFood : [String]
+   var imagesSweetFood : String
 }
 struct Drinks: Dish  {
     let plateName : String
     let description : String
     var price : Double
     var forManyPeople : Int
-//    var imagesDrinks: [String]
+    var imagesDrinks: String
 }
 

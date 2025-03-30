@@ -9,6 +9,8 @@ import UIKit
 
 class DrinksCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var drinksLabel: UILabel!
+    @IBOutlet weak var drinksImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

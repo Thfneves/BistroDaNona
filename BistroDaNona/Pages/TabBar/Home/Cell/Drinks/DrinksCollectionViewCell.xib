@@ -17,23 +17,26 @@
                 <rect key="frame" x="0.0" y="0.0" width="250" height="120"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drinks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oi5-pv-Wcr">
-                        <rect key="frame" x="63" y="52" width="125" height="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drinks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oi5-pv-Wcr">
+                        <rect key="frame" x="63" y="94" width="125" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nz8-fH-COZ">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="94"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" systemColor="systemBlueColor"/>
-            <constraints>
-                <constraint firstItem="Oi5-pv-Wcr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="63" id="9GI-qf-8SX"/>
-                <constraint firstItem="Oi5-pv-Wcr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="52" id="W7a-yg-hHU"/>
-                <constraint firstAttribute="trailing" secondItem="Oi5-pv-Wcr" secondAttribute="trailing" constant="62" id="gB3-77-QBI"/>
-                <constraint firstAttribute="bottom" secondItem="Oi5-pv-Wcr" secondAttribute="bottom" constant="51" id="ycw-Df-32f"/>
-            </constraints>
             <size key="customSize" width="372" height="186"/>
+            <connections>
+                <outlet property="drinksImage" destination="nz8-fH-COZ" id="mKx-eX-X1S"/>
+                <outlet property="drinksLabel" destination="Oi5-pv-Wcr" id="F1H-Yk-DPZ"/>
+            </connections>
             <point key="canvasLocation" x="384.73282442748092" y="68.309859154929583"/>
         </collectionViewCell>
     </objects>
