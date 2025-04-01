@@ -9,8 +9,8 @@ import UIKit
 
 class SweetFoodCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var sweetLabel: UILabel!
-    @IBOutlet weak var sweetImage: UIImageView!
+    @IBOutlet weak var titleSweetFood: UILabel!
+    @IBOutlet weak var pictureSweetFood: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,8 +22,11 @@ class SweetFoodCollectionViewCell: UICollectionViewCell {
     }
 
     
-    func setupCell(whit item: String){
-
+    func setupCell(whit item: String)-> String{
+        titleSweetFood.text = item
+        pictureSweetFood.image =  UIImage(named: item)
+        
+        return item
     }
 
 }

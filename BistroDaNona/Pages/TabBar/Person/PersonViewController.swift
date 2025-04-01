@@ -73,36 +73,36 @@ class PersonViewController: UIViewController, UITextFieldDelegate {
     @IBAction func ButtonLogar(_ sender: UIButton) {
         if validationRegister() == true {
             if let phoneText = phoneNumberTextField.text, let cepText = addressTextField.text,
-                       let phone = Int(phoneText), let cep = Int(cepText) {
+               let phone = Int(phoneText), let cep = Int(cepText) {
                 
-                        let person = Person(
-                            name: nameTextField.text!,
-                            email: emailTextField.text!,
-                            phone: phone,
-                            adress: cep
-                        )
-                        
-                        print("Dados cadastrados: \(person)")
-                        showSuccessAlert()
-                    } else {
-                        showAlert(title: "Erro", message: "Telefone ou CEP inválidos.")
-                    }
-                }
+                let person = Person(
+                    name: nameTextField.text!,
+                    email: emailTextField.text!,
+                    phone: phone,
+                    adress: cep
+                )
+                
+                print("Dados cadastrados: \(person)")
+                showSuccessAlert()
+            } else {
+                showAlert(title: "Erro", message: "Telefone ou CEP inválidos.")
             }
+        }
+    }
     @objc(textField:shouldChangeCharactersInRange:replacementString:) func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-                if textField == phoneNumberTextField || textField == addressTextField {
-                    let allowedCharacters = CharacterSet.decimalDigits
-                    let characterSet = CharacterSet(charactersIn: string)
-                    
-                    if textField == phoneNumberTextField {
-                        let newLength = (textField.text?.count ?? 0) + string.count - range.length
-                        if newLength > 9 { return false }
-                    }
-                    
-                    return allowedCharacters.isSuperset(of: characterSet)
-                }
-                return true
+        if textField == phoneNumberTextField || textField == addressTextField {
+            let allowedCharacters = CharacterSet.decimalDigits
+            let characterSet = CharacterSet(charactersIn: string)
+            
+            if textField == phoneNumberTextField {
+                let newLength = (textField.text?.count ?? 0) + string.count - range.length
+                if newLength > 9 { return false }
             }
             
+            return allowedCharacters.isSuperset(of: characterSet)
         }
+        return true
+    }
+    
+}
 

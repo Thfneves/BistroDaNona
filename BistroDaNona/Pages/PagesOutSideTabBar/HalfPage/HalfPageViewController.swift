@@ -27,14 +27,14 @@ class HalfPageViewController: UIViewController {
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-       super.viewDidDisappear(animated)
+        super.viewDidDisappear(animated)
         atritubedHalf(receivedArray: receivedArray, selectedItem: selectedItem!)
-   }
-   
+    }
+    
     var indexSelected: Int?
     var selectedItem: String?
     var receivedArray: [Dish] = []
-
+    
     func atritubedHalf(receivedArray: [Dish], selectedItem: String) {
         
         for Dish in receivedArray {
@@ -54,20 +54,20 @@ class HalfPageViewController: UIViewController {
         
         if let selectedItem = selectedItem,
            let dish = receivedArray.first(where: { $0.plateName == selectedItem }) {
-
+            
             CartManager.shared.items.append(dish)
         } else {
             print("Erro: prato não encontrado no array.")
-           
+            
         }
-           }
-        
     }
     
-    
+}
 
-    
-    
+
+
+
+
 
 
 
