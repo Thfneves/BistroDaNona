@@ -8,7 +8,7 @@
 import UIKit
 
 class MainCourseCollectionViewCell: UICollectionViewCell {
-
+    
     @IBOutlet weak var titleMainCourse: UILabel!
     @IBOutlet weak var pictureMainCourse: UIImageView!
     override func awakeFromNib() {
@@ -18,14 +18,14 @@ class MainCourseCollectionViewCell: UICollectionViewCell {
     
     static let identifier: String = String(describing: MainCourseCollectionViewCell.self)
     
-        static func nib() -> UINib {
+    static func nib() -> UINib {
         return UINib(nibName: identifier, bundle: nil)
     }
-
     
     func setupCell(whit item: String){
-
         
+        titleMainCourse.text = item
+        pictureMainCourse.image =  UIImage(named: item)
     }
-
+    
 }

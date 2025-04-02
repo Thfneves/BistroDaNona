@@ -8,7 +8,7 @@
 import UIKit
 
 class SweetFoodCollectionViewCell: UICollectionViewCell {
-
+    
     @IBOutlet weak var titleSweetFood: UILabel!
     @IBOutlet weak var pictureSweetFood: UIImageView!
     override func awakeFromNib() {
@@ -17,16 +17,17 @@ class SweetFoodCollectionViewCell: UICollectionViewCell {
     }
     static let identifier: String = String(describing: SweetFoodCollectionViewCell.self)
     
-        static func nib() -> UINib {
+    static func nib() -> UINib {
         return UINib(nibName: identifier, bundle: nil)
+      
     }
-
     
-    func setupCell(whit item: String)-> String{
+    
+    func setupCell(whit item: String){
+        
         titleSweetFood.text = item
         pictureSweetFood.image =  UIImage(named: item)
         
-        return item
     }
-
+    
 }

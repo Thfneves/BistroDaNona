@@ -8,7 +8,7 @@
 import UIKit
 
 class DrinksCollectionViewCell: UICollectionViewCell {
-
+    
     @IBOutlet weak var titleDrinks: UILabel!
     @IBOutlet weak var pictureDrinks: UIImageView!
     
@@ -18,13 +18,15 @@ class DrinksCollectionViewCell: UICollectionViewCell {
     }
     static let identifier: String = String(describing: DrinksCollectionViewCell.self)
     
-        static func nib() -> UINib {
+    static func nib() -> UINib {
         return UINib(nibName: identifier, bundle: nil)
     }
-
     
-    func setupCell(whit item: String){
-
+    func setupCell(whit item: String)-> String{
+        titleDrinks.text = item
+        pictureDrinks.image =  UIImage(named: item)
+        
+        return item
     }
-
+    
 }

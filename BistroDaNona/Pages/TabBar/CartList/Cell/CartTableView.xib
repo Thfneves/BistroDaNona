@@ -97,7 +97,6 @@
                         </connections>
                     </button>
                 </subviews>
-                <color key="backgroundColor" systemColor="linkColor"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="cXL-Jf-QPe" secondAttribute="trailing" constant="28" id="KUd-0F-8Se"/>
                     <constraint firstItem="Puz-Dm-v0I" firstAttribute="top" secondItem="cXL-Jf-QPe" secondAttribute="bottom" constant="2" id="YPF-0K-nMR"/>
@@ -109,6 +108,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="cartName" destination="btY-yy-WVb" id="luO-jc-skV"/>
                 <outlet property="howManyCartName" destination="XdO-Uv-56r" id="E2g-jI-3e6"/>
@@ -121,9 +121,6 @@
         <image name="trash" catalog="system" width="117" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

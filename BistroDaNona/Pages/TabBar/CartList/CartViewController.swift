@@ -14,9 +14,7 @@ class CartViewController: UIViewController, CartTableView.CartCellDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         cartTableView()
-        
     }
     
     @IBAction func nextBuy(_ sender: UIButton) {
@@ -27,9 +25,9 @@ class CartViewController: UIViewController, CartTableView.CartCellDelegate {
                 presentationController.detents = [.large()]
             }
             self.present(vc, animated: true)
-            
         }
     }
+    
     var items: [Dish] {
         return CartManager.shared.items
     }
@@ -59,11 +57,9 @@ class CartViewController: UIViewController, CartTableView.CartCellDelegate {
         carListTableView.reloadData()
     }
     
-    
     func calculaTotal() -> Double{
         
         var soma = 00.00
-        
         for dish in items {
             soma += dish.price
             print(soma)
@@ -71,7 +67,6 @@ class CartViewController: UIViewController, CartTableView.CartCellDelegate {
         }
         return soma
     }
-    
 }
 
 extension CartViewController: UITableViewDelegate, UITableViewDataSource{

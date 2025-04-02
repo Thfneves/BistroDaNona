@@ -11,10 +11,8 @@ class HomeScreenViewController: UIViewController {
     
     @IBOutlet weak var starterDish: UICollectionView!
     @IBOutlet weak var mainCourse: UICollectionView!
-    
     @IBOutlet weak var drinksCollectionView: UICollectionView!
     @IBOutlet weak var sweetFood: UICollectionView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -96,14 +94,10 @@ class HomeScreenViewController: UIViewController {
         // setei por aqui tambem, mas nao esta batendo, a starterView
         
     }
-    
 }
 
 
 extension HomeScreenViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    
-
-    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         

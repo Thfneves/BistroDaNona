@@ -18,26 +18,42 @@
                     <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="275" placeholderIntrinsicHeight="120" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="J69-DX-0D0">
                         <rect key="frame" x="3" y="3" width="269" height="114"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RDY-SZ-nA6">
-                                <rect key="frame" x="8" y="0.0" width="253" height="95"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="T9R-7A-cgt">
+                                <rect key="frame" x="34.666666666666657" y="0.0" width="200" height="114"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Queijo Brie de Geleia" translatesAutoresizingMaskIntoConstraints="NO" id="RDY-SZ-nA6">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="95"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="D2v-bv-O8C"/>
+                                            <constraint firstAttribute="height" constant="95" id="REV-2m-FI0"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLD-HI-Q2G">
+                                        <rect key="frame" x="0.0" y="97" width="200" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="Z7A-Vt-GRk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="95" id="8mp-Wn-oyb"/>
+                                    <constraint firstItem="RDY-SZ-nA6" firstAttribute="leading" secondItem="T9R-7A-cgt" secondAttribute="leading" id="VKJ-JF-bfl"/>
+                                    <constraint firstAttribute="trailing" secondItem="RDY-SZ-nA6" secondAttribute="trailing" id="zsI-UO-0rK"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLD-HI-Q2G">
-                                <rect key="frame" x="119" y="97" width="31" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </stackView>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="269" id="pmm-3K-y8c"/>
+                        </constraints>
                     </stackView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstItem="J69-DX-0D0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="0Y1-Ls-jKu"/>
-                <constraint firstItem="J69-DX-0D0" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ZuN-vI-0LB"/>
+                <constraint firstAttribute="trailing" secondItem="J69-DX-0D0" secondAttribute="trailing" constant="3" id="2i3-Me-2VJ"/>
                 <constraint firstItem="J69-DX-0D0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="dPA-Oq-Dro"/>
                 <constraint firstAttribute="bottom" secondItem="J69-DX-0D0" secondAttribute="bottom" constant="3" id="srJ-R8-gcA"/>
             </constraints>
@@ -49,4 +65,7 @@
             <point key="canvasLocation" x="136.64122137404578" y="35.211267605633807"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="Queijo Brie de Geleia" width="188" height="279"/>
+    </resources>
 </document>
