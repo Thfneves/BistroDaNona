@@ -5,8 +5,8 @@
 //  Created by Thiago Neves on 08/02/25.
 //
 
-class  CartManager {
-    static var shared = CartManager()
+class  DataManager {
+    static var shared = DataManager()
     
     var items: [Dish] = []
     

@@ -29,7 +29,7 @@ class CartViewController: UIViewController, CartTableView.CartCellDelegate {
     }
     
     var items: [Dish] {
-        return CartManager.shared.items
+        return DataManager.shared.items
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -90,7 +90,7 @@ extension CartViewController: UITableViewDelegate, UITableViewDataSource{
     
     func didTapRemoveButton(cell: CartTableView) {
         if let indexPath = carListTableView.indexPath(for: cell) {
-            CartManager.shared.items.remove(at: indexPath.row)
+            DataManager.shared.items.remove(at: indexPath.row)
             carListTableView.deleteRows(at: [indexPath], with: .automatic)
             totalCart.text = String(calculaTotal())
         }

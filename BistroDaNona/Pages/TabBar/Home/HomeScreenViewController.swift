@@ -183,7 +183,7 @@ extension HomeScreenViewController: UICollectionViewDelegate, UICollectionViewDa
                 func receiveData(selectedItem: String?, indexSelected: Int?, arraySelected: [Dish])
             }
             
-            vc.receiveData(selectedItem: selectedItem, arraySelected: arraySelected)
+            vc.configureViewModel(receivedArray: arraySelected, selectedItem: selectedItem)
             
             if let presentationController = vc.presentationController as? UISheetPresentationController {
                 presentationController.detents = [.large()]
