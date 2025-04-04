@@ -91,7 +91,6 @@ class HomeScreenViewController: UIViewController {
         mainCourse.collectionViewLayout = layout
         sweetFood.collectionViewLayout = layout
         drinksCollectionView.collectionViewLayout = layout
-        // setei por aqui tambem, mas nao esta batendo, a starterView
         
     }
 }

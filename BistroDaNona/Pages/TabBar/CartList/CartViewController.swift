@@ -12,9 +12,24 @@ class CartViewController: UIViewController, CartTableView.CartCellDelegate {
     @IBOutlet weak var carListTableView: UITableView!
     @IBOutlet weak var totalCart: UILabel!
     
+    var viewModel = CartViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        cartTableView()
+        setupTableView()
+        
+        viewModel.onItemsUpdated = { [weak self] in
+            DispatchQueue.main.async {
+                self?.carListTableView.reloadData()
+                self?.totalCart.text = self?.viewModel.totalPrice
+            }
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        carListTableView.reloadData()
+        totalCart.text = viewModel.totalPrice
     }
     
     @IBAction func nextBuy(_ sender: UIButton) {
@@ -28,52 +43,29 @@ class CartViewController: UIViewController, CartTableView.CartCellDelegate {
         }
     }
     
-    var items: [Dish] {
-        return DataManager.shared.items
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        carListTableView.reloadData()
-        totalCart.text = String(calculaTotal())
-    }
-    
-    func receiveData(arraySelected: [Dish]) {
-        self.receivedArray = arraySelected
-    }
-    
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         
     }
     
-    var receivedArray: [Dish] = []
-    
-    
-    func cartTableView(){
+    func setupTableView() {
         carListTableView.delegate = self
         carListTableView.dataSource = self
         carListTableView.register(CartTableView.nib(), forCellReuseIdentifier: CartTableView.identifier)
         carListTableView.reloadData()
     }
     
-    func calculaTotal() -> Double{
-        
-        var soma = 00.00
-        for dish in items {
-            soma += dish.price
-            print(soma)
-            print(dish.price)
+    func didTapRemoveButton(cell: CartTableView) {
+        if let indexPath = carListTableView.indexPath(for: cell) {
+            viewModel.removeItem(at: indexPath.row)
         }
-        return soma
     }
 }
 
 extension CartViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return items.count
+        return viewModel.items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -81,19 +73,11 @@ extension CartViewController: UITableViewDelegate, UITableViewDataSource{
             return UITableViewCell()
         }
         
-        let item = items[indexPath.row]
+        let item = viewModel.items[indexPath.row]
         cell.configure(with: item)
         cell.delegate = self
         
         return cell
-    }
-    
-    func didTapRemoveButton(cell: CartTableView) {
-        if let indexPath = carListTableView.indexPath(for: cell) {
-            DataManager.shared.items.remove(at: indexPath.row)
-            carListTableView.deleteRows(at: [indexPath], with: .automatic)
-            totalCart.text = String(calculaTotal())
-        }
     }
 }
 
